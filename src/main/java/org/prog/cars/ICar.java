@@ -6,5 +6,5 @@ public interface ICar {
 
     void fillCar();
 
-    void
+    void closeOpenDoor();
 }

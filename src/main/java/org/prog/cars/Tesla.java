@@ -14,4 +14,7 @@ public class Tesla implements ICar {
     public void autoPilot() {
         System.out.println("Tesla is driving with autopilot");
     }
+
+    @Override
+    public void closeOpenDoor() {System.out.println("Tesla doors can be opened with fingerprints");}
 }

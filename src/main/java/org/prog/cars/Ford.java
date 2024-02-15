@@ -7,6 +7,9 @@ public class Ford implements ICar {
     public int miles;//500
 
     @Override
+    public void closeOpenDoor() {System.out.println("Honda doors can be opened with a key");}
+
+    @Override
     public void goTo() {
         System.out.println("Ford uses diesel engine!");
     }

@@ -5,3 +5,4 @@ public class Lorry extends Car {
     public void turn() {
         System.out.println("Lorry can turn left and right from the second lane");
 }
+    }

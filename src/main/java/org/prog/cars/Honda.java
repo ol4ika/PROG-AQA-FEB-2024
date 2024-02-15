@@ -10,4 +10,7 @@ public class Honda implements ICar {
     public void fillCar() {
         System.out.println("Honda is using gas");
     }
+
+    @Override
+    public void closeOpenDoor() {System.out.println("Honda doors can be opened with a key");}
 }

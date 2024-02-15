@@ -5,3 +5,4 @@ public class CargoTruck extends Truck {
     public void turn() {
         System.out.println("Cargo Truck turns left and right from the second lane");
 }
+    }

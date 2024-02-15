@@ -1,8 +1,6 @@
 package org.prog;
 
-import org.prog.cars.Ford;
-import org.prog.cars.ICar;
-import org.prog.cars.Tesla;
+import org.prog.cars.*;
 
 public class Main {
 
@@ -11,11 +9,13 @@ public class Main {
         Truck truck = new Truck();
         CargoTruck cargoTruck = new CargoTruck();
         Lorry lorry = new Lorry();
+        Tesla tesla = new Tesla();
 
         car.turn();
         truck.turn();
         cargoTruck.turn();
         lorry.turn();
+        tesla.closeOpenDoor();
 
     }
     public static void useCar(ICar iCar) {
@@ -25,7 +25,8 @@ public class Main {
 
     public static void useTesla(Tesla tesla) {
         tesla.goTo();
-        tesla.autoPilot();
+        tesla.closeOpenDoor();
+
     }
 //        Samsung samsung = new Samsung();
 //        SamsungAndroindGenOne samsungAndroindGenOne = new SamsungAndroindGenOne();
