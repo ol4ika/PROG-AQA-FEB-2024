@@ -10,12 +10,16 @@ public class Main {
         CargoTruck cargoTruck = new CargoTruck();
         Lorry lorry = new Lorry();
         Tesla tesla = new Tesla();
+        Honda honda = new Honda();
+        Ford ford = new Ford();
 
         car.turn();
         truck.turn();
         cargoTruck.turn();
         lorry.turn();
         tesla.closeOpenDoor();
+        honda.closeOpenDoor();
+        ford.closeOpenDoor();
 
     }
     public static void useCar(ICar iCar) {
