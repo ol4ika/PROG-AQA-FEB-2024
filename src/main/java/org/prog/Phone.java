@@ -5,6 +5,7 @@ public class Phone {
     private boolean isDisplayTurnedOn;
     //TODO: read about java primitive data types
     private int volume;
+    private boolean isFlashlightOn;
 
     public void pressPowerButton() {
         if (isDisplayTurnedOn == true) {
@@ -30,7 +31,15 @@ public class Phone {
     }
 
     private void printState() {
-        System.out.println("Phone display : " + isDisplayTurnedOn);
-        System.out.println("Phone volume : " + volume);
+        System.out.println("Phone display : " + isDisplayTurnedOn + " | " + "Phone volume : " + volume + " | " + "Phone flashlight : " + isFlashlightOn);
+    }
+
+    public void pressFlashLightButton() {
+        if (isFlashlightOn == true) {
+            isFlashlightOn = false;
+        } else {
+            isFlashlightOn = true;
+        }
+        printState();
     }
 }

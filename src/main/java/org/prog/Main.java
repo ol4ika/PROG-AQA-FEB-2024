@@ -33,12 +33,14 @@ public class Main {
         samsung.volumeUp();
         samsung.volumeUp();
         samsung.volumeUp();
-        samsung.scanFingerPrints();
+        samsung.pressFlashLightButton();
+        samsung.pressFlashLightButton();
+        samsung.pressPowerButton();
 
-        SamsungFold fold = new SamsungFold();
-        fold.pressPowerButton();
-        fold.volumeUp();;
-        fold.scanFingerPrints();
-        fold.foldThePhone();
+//        SamsungFold fold = new SamsungFold();
+//        fold.pressPowerButton();
+//        fold.volumeUp();;
+//        fold.scanFingerPrints();
+//        fold.foldThePhone();
     }
 }
