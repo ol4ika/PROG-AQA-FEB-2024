@@ -7,6 +7,26 @@ import org.prog.cars.Tesla;
 public class Main {
 
     public static void main(String[] args) {
+        Car car = new Car();
+        Truck truck = new Truck();
+        CargoTruck cargoTruck = new CargoTruck();
+        Lorry lorry = new Lorry();
+
+        car.turn();
+        truck.turn();
+        cargoTruck.turn();
+        lorry.turn();
+
+    }
+    public static void useCar(ICar iCar) {
+        iCar.fillCar();
+        iCar.goTo();
+    }
+
+    public static void useTesla(Tesla tesla) {
+        tesla.goTo();
+        tesla.autoPilot();
+    }
 //        Samsung samsung = new Samsung();
 //        SamsungAndroindGenOne samsungAndroindGenOne = new SamsungAndroindGenOne();
 //        SamsungAndroindGenTwo samsungAndroindGenTwo = new SamsungAndroindGenTwo();
@@ -24,7 +44,7 @@ public class Main {
 //        samsungAndroindGenSix.getResolution();
 //        Tesla tesla = new Tesla();
 //        Honda honda = new Honda();
-        Ford ford = new Ford();
+//        Ford ford = new Ford();
 //
 ////        useTesla(tesla);
 //
@@ -35,24 +55,16 @@ public class Main {
 //        ford.driveTo("Kyiv");
 //        ford.driveTo("Kyiv", "Odessa");
 //        ford.driveTo("Kyiv", "Odessa", "Dnepr");
+//
+//        Person person = new Person();
+//
+//
+//        person.iWant("iPhone", "14 Pro max", "256 GB");
+//        person.iWant("iPhone", "14 Pro max");
+//        person.iWant("iPhone");
+//        person.iWant();
+//    }
 
-        Person person = new Person();
 
-
-        person.iWant("iPhone", "14 Pro max", "256 GB");
-        person.iWant("iPhone", "14 Pro max");
-        person.iWant("iPhone");
-        person.iWant();
-    }
-
-    public static void useCar(ICar iCar) {
-        iCar.fillCar();
-        iCar.goTo();
-    }
-
-    public static void useTesla(Tesla tesla) {
-        tesla.goTo();
-        tesla.autoPilot();
-    }
 
 }
