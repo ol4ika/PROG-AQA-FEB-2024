@@ -20,7 +20,7 @@ public class ExceptionsDemo {
         System.out.println("test");
     }
 
-    public static void readFile1() {
+    public static void readFile1()  {
         readFile2();
     }
 
