@@ -68,5 +68,20 @@ public class MapsDemo {
         for (Car c : carWithCertainColor) {
             System.out.println(ownedCars.get(c));
         }
+
+        List<Car> ownersOfCarsWithSpecificColor = new ArrayList<>();
+
+        for (var owner : ownedCars.entrySet()) {
+            if (owner.getValue().equals("John") || owner.getValue().equals("Alice")) {
+                ownersOfCarsWithSpecificColor.add(owner.getKey());
+            }
+        }
+
+        for (Car c : carWithCertainColor) {
+            System.out.println(ownedCars.get(c));
+            for (Car car : ownersOfCarsWithSpecificColor) {
+                System.out.println(car.carColor);
+            }
+        }
     }
 }
