@@ -22,21 +22,22 @@ public class MapsDemo {
         registerCar("Pete", new Car(CarColors.BLACK), carOwners);
         registerCar("Kate", new Car(CarColors.WHITE), carOwners);
 
-        Set<String> ownersOfCarsWithSpecificColor = new HashSet<>();
-        Set<String> ownerNames = carOwners.keySet();
+//        Set<String> ownersOfCarsWithSpecificColor = new HashSet<>();
+//        Set<String> ownerNames = carOwners.keySet();
+//
+//        for (String owner : ownerNames) {
+//            List<Car> carsBelongingToThisOwner = carOwners.get(owner);
+//            for (Car c : carsBelongingToThisOwner) {
+//                if (c.carColor.equals(CarColors.WHITE)) {
+//                    ownersOfCarsWithSpecificColor.add(owner);
+//                }
+//            }
+//        }
+//
+//        for (String o : ownersOfCarsWithSpecificColor) {
+//            System.out.println(o);
+//        }
 
-        for (String owner : ownerNames) {
-            List<Car> carsBelongingToThisOwner = carOwners.get(owner);
-            for (Car c : carsBelongingToThisOwner) {
-                if (c.carColor.equals(CarColors.WHITE)) {
-                    ownersOfCarsWithSpecificColor.add(owner);
-                }
-            }
-        }
-
-        for (String o : ownersOfCarsWithSpecificColor) {
-            System.out.println(o);
-        }
     }
 
     private static void registerCar(String owner, Car car, HashMap<String, List<Car>> cars) {
@@ -62,11 +63,48 @@ public class MapsDemo {
         for (Car c : cars) {
             if (c.carColor.equals(CarColors.BLACK)) {
                 carWithCertainColor.add(c);
+//        List<Car> carWithCertainColor = new ArrayList<>();
+//        Set<Car> cars = ownedCars.keySet();
+//        for (Car c : cars) {
+//            if (c.carColor.equals(CarColors.BLACK)) {
+//                carWithCertainColor.add(c);
+//            }
+//        }
+//
+//        for (Car c : carWithCertainColor) {
+//            System.out.println(ownedCars.get(c));
+//        }
+
+                List<Car> ownersOfCarsWithSpecificColor = new ArrayList<>();
+
+                for (var owner : ownedCars.entrySet()) {
+                    if (owner.getValue().equals("John") || owner.getValue().equals("Alice")) {
+                        ownersOfCarsWithSpecificColor.add(owner.getKey());
+                    }
+                }
+
+                for (Car ca : carWithCertainColor) {
+                    System.out.println(ownedCars.get(ca));
+                    for (Car car : ownersOfCarsWithSpecificColor) {
+                        System.out.println(car.carColor);
+                    }
+                }
+            }
+        }
+
+        List<Car> ownersOfCarsWithSpecificColor = new ArrayList<>();
+
+        for (var owner : ownedCars.entrySet()) {
+            if (owner.getValue().equals("John") || owner.getValue().equals("Alice")) {
+                ownersOfCarsWithSpecificColor.add(owner.getKey());
             }
         }
 
         for (Car c : carWithCertainColor) {
             System.out.println(ownedCars.get(c));
+            for (Car car : ownersOfCarsWithSpecificColor) {
+                System.out.println(car.carColor);
+            }
         }
     }
 }

@@ -27,10 +27,6 @@ public class SeleniumDemo {
             //Step 2: press enter while in search form
             searchInput.sendKeys(Keys.ENTER);
 
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
-//            List<WebElement> searchHeaders =
-//                    wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("h3"), 5));
-//
         List<WebElement> searchGoods = driver.findElements(By.xpath("//div[@class='goods-tile__inner']//span[@class='goods-tile__title']"));
         WebElement firstGood = searchGoods.get(0);
         String titleOfFirstGood = firstGood.getText();
