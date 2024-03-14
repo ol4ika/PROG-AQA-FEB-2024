@@ -28,7 +28,9 @@ public class AlloUaTest {
         page.searchForGoods(phoneName);
         Assert.assertTrue(page.searchResultsContain(phoneName),
                 "No phone with name '" + phoneName + "' was present on page");
-        page.scrollToElement(page.pagination());
+        page.switchToNextPage();
+        page.switchToSearchPageByNumber("4");
+        page.switchToPrevPage();
         //add next page by clicking ">"
         // add verifiation like line 29
     }
