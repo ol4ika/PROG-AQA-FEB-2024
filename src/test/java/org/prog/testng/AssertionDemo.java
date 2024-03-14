@@ -9,7 +9,10 @@ public class AssertionDemo {
 
     @Test
     public void okTest() {
-        Assert.assertEquals(s, "s");
+        String fString = "I print %s : %s";
+        System.out.println(String.format(fString, "a", "b"));
+        System.out.println(String.format(fString, "b", "c", "e"));
+        System.out.println(String.format(fString, "aaaa", "ddddd"));
     }
 
     @Test

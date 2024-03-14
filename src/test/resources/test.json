@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Ronja",
+        "last": "Oja"
+      },
+      "location": {
+        "street": {
+          "number": 567,
+          "name": "Myllypuronkatu"
+        },
+        "city": "Geta",
+        "state": "Päijät-Häme",
+        "country": "Finland",
+        "postcode": 19997,
+        "coordinates": {
+          "latitude": "-25.8703",
+          "longitude": "112.5747"
+        },
+        "timezone": {
+          "offset": "+4:30",
+          "description": "Kabul"
+        }
+      },
+      "email": "ronja.oja@example.com",
+      "login": {
+        "uuid": "ca3a0709-1b21-45ff-b46a-10ee43e89152",
+        "username": "redbird144",
+        "password": "gotcha",
+        "salt": "Tkfv80Ss",
+        "md5": "af0c81e288040154408277bfb0340f68",
+        "sha1": "ff23c3a6d6a6833b1b70f4a9dad34b856ea957e9",
+        "sha256": "284b473115a614cf741d821d1cd3b28edeb0d3225d4778f653bd66cf6fba7d99"
+      },
+      "dob": {
+        "date": "1997-01-12T09:38:37.166Z",
+        "age": 27
+      },
+      "registered": {
+        "date": "2021-01-22T10:53:47.525Z",
+        "age": 3
+      },
+      "phone": "03-955-031",
+      "cell": "048-036-07-60",
+      "id": {
+        "name": "HETU",
+        "value": "NaNNA248undefined"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/27.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/27.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/27.jpg"
+      },
+      "nat": "FI"
+    }
+  ],
+  "info": {
+    "seed": "6ed510de62906102",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
