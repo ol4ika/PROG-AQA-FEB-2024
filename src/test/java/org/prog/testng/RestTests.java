@@ -34,7 +34,7 @@ public class RestTests {
         RequestSpecification rs = RestAssured.given()
                 .header("X-Client", "prog qutomation")
                 .body("reqeust body")
-                .queryParam("inc", "gender,name,nat")
+                .queryParam("inc", "gender,name,nat,id")
                 .queryParam("noinfo")
                 .queryParam("results", 10)
                 .basePath("api/");
