@@ -1,17 +1,15 @@
-Feature: Google search tests
+Feature: Allo search tests
 
 #  TODO: write tests for ${your.site.name} as cucumber scenarios
 
   Scenario Outline: Simple Cucumber Scenario
-    Given I retrieve a random user from API as "user_1"
-    Given I retrieve a random user from API as "user_2"
-    Given I load google page
-    Given I accept cookies if present
-    When I google for "<user_id>"
-    Then I can see at least <search_count> search results for "<user_id>"
+    Given I load Allo page
+    Given I click search
+    When I search Iphone15
+    Then I see goods in page
+    Given I switch To Next Page
+    Given I switch To Search Page By Number
+    Given I switch To Prev Page
     Examples:
-      | search_count | user_id |
-      | 1            | user_1  |
-      | 2            | user_2  |
-      | 3            | user_1  |
-      | 8            | user_2  |
+      |  |
+
